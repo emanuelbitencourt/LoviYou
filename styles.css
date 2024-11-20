@@ -1,0 +1,151 @@
+/* ESTILO GERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 90px auto 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: red;
+}
+
+/* ELEMENTOS TEXTUAIS */
+.names h1, 
+.text-0 h1,
+.textfinal h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.text1 p,
+.text2 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 20px;
+}
+
+.textfinal h2 {
+    font-size: 1.5rem;
+}
+
+/* EMBED DO YOUTUBE */
+.youtube-embed iframe {
+    width: 90%;
+    max-width: 560px;
+    height: 315px;
+    margin: 20px auto;
+    display: block;
+}
+
+.counter {
+    font-size: x-large;
+}
+
+.heart {
+    color: red;
+}
+
+/* AJUSTES RESPONSIVOS */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel {
+        width: 95%;
+    }
+
+    .names h1, 
+    .text-0 h1,
+    .textfinal h2 {
+        font-size: 1.4rem;
+    }
+
+    .text1 p,
+    .text2 p {
+        font-size: 0.9rem;
+    }
+
+    .youtube-embed iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 1.2rem;
+    }
+
+    .names h1, 
+    .text-0 h1,
+    .textfinal h2 {
+        font-size: 1.2rem;
+    }
+
+    .text1 p,
+    .text2 p {
+        font-size: 0.8rem;
+    }
+
+    .youtube-embed iframe {
+        height: 180px;
+    }
+}
